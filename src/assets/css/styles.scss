@@ -1,0 +1,73 @@
+.backColor{
+    background: #3f51b5;
+    color: white;
+    font-size: 20px;
+}
+
+.iconData{
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.delete{
+	color: #dc3545;
+}
+
+.scale:hover{
+	transform: scale(1.2); 
+}
+
+.searchInput{
+	width: 35%;
+}
+
+.labelSearch{
+	width: 67px;
+    font-weight: bold;
+    font-size: 21px;
+    padding-top: 2px;
+}
+
+.selectToShow{
+	width: 60px;
+}
+
+.contentSelectToShow{
+	p, select {
+		margin-top: 8px;
+		margin-bottom: 1px;
+	}
+
+	padding-left: 60px;
+}
+
+.cursor-pointer{
+	cursor: pointer;
+}
+
+.primary{
+	color: #3f51b5;
+}
+
+.active {
+	background: lightgray !important;
+}
+
+.labelHistorico{
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 2px;
+	margin-right: 10px;
+}
+
+.historyInput{
+	width: 100%;
+}
+
+.super-delete {
+	color: #dc3545;
+}
+
+.success {
+	color: seagreen;
+}
