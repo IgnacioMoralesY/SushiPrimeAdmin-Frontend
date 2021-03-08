@@ -1,6 +1,5 @@
 import React, {useEffect, useState } from 'react';
 import moment from 'moment';
-import Moment from 'react-moment';
 import 'moment-timezone';
 
 import { connect } from 'react-redux';
@@ -36,8 +35,10 @@ const Listar = ({asistencias}) => {
 				<td> En turno  </td>
 			)
 		}else{
+
+			let f = moment.utc(fecha_salida).format("DD/MM/YYYY HH:mm");
 			return (
-				<td> <Moment format="DD/MM/YYYY HH:mm"  date={fecha_salida} />  </td>
+				<td> { f }  </td>
 			)
 		}
 	}
@@ -73,14 +74,14 @@ const Listar = ({asistencias}) => {
 					{
 						currentData.map((asistencia, i) => {
 							const td = tdSalida(asistencia.fecha_salida);
-
+							let f = moment.utc(asistencia.fecha_entrada).format("DD/MM/YYYY HH:mm");
 							return (
 								<tr key={i}>
 									<td> {asistencia.tienda.nombre} </td>
 									<td> {asistencia.usuario.rut} </td>
 									<td> {asistencia.usuario.nombre} </td>
 									<td> {asistencia.usuario.apellido} </td>
-									<td> <Moment format="DD/MM/YYYY HH:mm"  date={asistencia.fecha_entrada} />  </td>
+									<td> {f}  </td>
 									{td}
 								</tr>
 							)
