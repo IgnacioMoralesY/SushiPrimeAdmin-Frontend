@@ -85,6 +85,7 @@ const Listar = ({users, get, remove, updateUser, bloquear, desbloquear}) => {
 		  })
 	}
 
+	// le saque el boton eliminar usuario <BiTrash className='iconData delete scale mr-3' onClick={() => confirmarEliminar(user.id)} /> 
     return(
         <div>
 			<Row>
@@ -132,7 +133,7 @@ const Listar = ({users, get, remove, updateUser, bloquear, desbloquear}) => {
 									<td> 
 										<div className='d-flex'>
 											{ botonBloqueo }
-											<BiTrash className='iconData delete scale mr-3' onClick={() => confirmarEliminar(user.id)} /> 
+											
 											<EditIcon className='iconData primary scale' onClick={() => updateUser(user)}/>
 										</div>
 									</td>

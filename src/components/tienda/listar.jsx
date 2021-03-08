@@ -51,6 +51,8 @@ const Listar = ({tiendas, get, remove, updateTienda}) => {
 		  })
 	}
 
+	// quite el eliminar <BiTrash className='iconData delete scale mr-3' onClick={() => confirmarEliminar(tienda.id)} /> 
+
     return(
         <div>
 			<Row>
@@ -82,7 +84,7 @@ const Listar = ({tiendas, get, remove, updateTienda}) => {
 								<td> {tienda.nombre} </td>
 								<td> 
                                     <div className='d-flex'>
-                                        <BiTrash className='iconData delete scale mr-3' onClick={() => confirmarEliminar(tienda.id)} /> 
+                                        
                                         <EditIcon className='iconData primary scale' onClick={() => updateTienda(tienda)}/>
                                     </div>
                                 </td>
